@@ -1783,7 +1783,7 @@ body.rounded-btns .read-more {
 }
 .header-basic .header-logo .logo-img {
   display: block;
-  max-width: 7rem;
+  /* max-width: 7rem; */
   max-height: calc(60px - 10px);
   transition: all 0.5s ease-in-out 0s;
 }
@@ -3503,7 +3503,7 @@ body.rounded-btns .read-more {
 
 .footer-logo {
   margin-bottom: 1.5rem;
-  max-width: 30%;
+  max-width: 60%; /* 30% before */
 }
 
 .footer-text-about-us {
@@ -4472,7 +4472,7 @@ body.rounded-btns .read-more {
   text-transform: capitalize;
   transition: all 0.3s ease-in-out 0s;
   box-shadow: 1px 1px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.15);
-  height: 600px;
+  /* height: 600px; */
 }
 @media (max-width: 1199px) {
   .pricing .plan {
