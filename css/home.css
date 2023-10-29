@@ -1,0 +1,151 @@
+.clr-main {
+    color: #09aff4;
+}
+
+.askContainer {
+    max-width: 28rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.askflex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#question {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    outline: none;
+}
+
+#ask {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    outline: none;
+    background: linear-gradient(90deg, #030005 0%, #01163d 100%);
+    color: white;
+    cursor: pointer;
+}
+
+#loading-img {
+    width: 100%;
+}
+
+#response {
+    margin-top: 1.5rem;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+#title {
+    margin-top: 0;
+}
+
+#ask-social {
+    margin-top: 20px;
+}
+
+#mic-container {
+    text-align: center;
+}
+
+#mic, #muteMic {
+    width: 50px;
+}
+#mic {
+    display: none;
+}
+
+#speaker-container img
+{
+    width: 30px;
+}
+
+.speech-control  select {
+    width: 100px;
+}
+
+.speech-control {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Start of section for quick fixes
+for mobile responsiveness */
+
+
+@media (max-width: 990px) {
+    #about {
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .info-items-list .info-item {
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: center !important;
+    }
+    #featuresAbout {
+        display: flex;
+        justify-content: center;
+    }
+    .cta-area {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+/* for paypal button */
+    #paypal-logo {
+      font-family: Verdana, Tahoma;
+      font-weight: bold;
+      font-size: 26px;
+    }
+      #firstPartLogo {
+        color: #253b80;
+      }
+  
+      #secondPartLogo {
+        color: #179bd7;
+      }
+   
+    
+    #paypal-button {
+      padding: 15px 30px;
+      border: 1px solid #FF9933;
+      border-radius: 5px;
+      background-image: linear-gradient(#FFF0A8, #F9B421);
+      margin: 0 auto;
+      display: block;
+      min-width: 138px;
+      position: relative;
+    }
+      
+      #paypal-button-title {
+        font-size: 14px;
+        color: #505050;
+        vertical-align: baseline;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+      }
+      
+      #paypal-logo {
+        display: inline-block;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+        font-size: 20px;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+  
+  
