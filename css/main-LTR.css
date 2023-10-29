@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /**/
-/*===================================================
-Project: SmartLet
-Auther: aminThemes
-Version: 1.0
-Last change: 30 November 2022
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template 
-====================================================*/
+
 /*==
 - global-rules and helper classes
 - page-header
@@ -31,9 +25,9 @@ Template Description: IT Solutions & Business Services Responsive HTML5 Bootstra
 /* start global, helper classes , Components Rules*/
 :root {
   /*Colors CSS Varibales*/
-  /*================  main-color values */
-  --clr-main: #09aff4;
-  --clr-main-rgb: 9, 175, 244;
+  /*================  main-color values last one: to test later: #7EFCF4*/
+  --clr-main: #4ecddb;
+  --clr-main-rgb: 78, 205, 219;
   /*================  accent-color values */
   --clr-accent: #0d1857;
   --clr-accent-rgb: 13, 24, 87;
@@ -284,7 +278,7 @@ a:hover {
 @media (max-width: 991px) {
   .sec-heading {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .sec-heading .cta-area {
@@ -295,7 +289,7 @@ a:hover {
 @media (max-width: 991px) {
   .sec-heading .cta-area {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .sec-heading .title {
@@ -1669,8 +1663,9 @@ body.rounded-btns .read-more {
   z-index: 1030;
   border-bottom: 1px solid transparent;
 }
+/* navbar color */
 .is-sticky.header-basic {
-  background-color: var(--clr-main);
+  background-color: var(--clr-extra-dark-grey);
 }
 .is-sticky.header-basic .menu-link {
   color: var(--clr-white) !important;
@@ -1730,8 +1725,9 @@ body.rounded-btns .read-more {
   transform: rotate(-45deg) translateY(-9px);
 }
 @media (max-width: 1199px) {
+  /* navbar */
   .header-basic {
-    background-color: var(--clr-main);
+    background-color: var(--clr-extra-dark-grey);
   }
   .header-basic .controls-box .header-search-btn {
     color: var(--clr-white);
@@ -1787,8 +1783,8 @@ body.rounded-btns .read-more {
 }
 .header-basic .header-logo .logo-img {
   display: block;
-  max-width: 10rem;
-  max-height: calc(90px - 10px);
+  max-width: 7rem;
+  max-height: calc(60px - 10px);
   transition: all 0.5s ease-in-out 0s;
 }
 .header-basic .header-logo .logo-img.light-logo {
@@ -2021,7 +2017,6 @@ body.rounded-btns .read-more {
 .page-hero {
   position: relative;
   z-index: 0;
-  max-height: 1280px;
   min-height: 100vh;
   padding: 100px 0;
 }
@@ -2703,6 +2698,9 @@ body.rounded-btns .read-more {
   margin-bottom: 3rem;
   opacity: 0.75;
   letter-spacing: 0.5px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .about .text-area .about-text::first-letter {
   text-transform: capitalize;
@@ -4474,6 +4472,7 @@ body.rounded-btns .read-more {
   text-transform: capitalize;
   transition: all 0.3s ease-in-out 0s;
   box-shadow: 1px 1px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.15);
+  height: 600px;
 }
 @media (max-width: 1199px) {
   .pricing .plan {
@@ -4675,7 +4674,8 @@ body.rounded-btns .read-more {
 /*    Start dark theme rules  */
 body.dark-theme {
   color: var(--clr-white);
-  background: var(--clr-dark-blue);
+  /* background: var(--clr-dark-blue); */
+  background: linear-gradient(90deg, #050000 46%, #240129 100%);
   /* about section */
 }
 body.dark-theme .header-basic .header-logo .logo-img.light-logo {
