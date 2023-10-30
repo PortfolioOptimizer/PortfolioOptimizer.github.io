@@ -801,3 +801,4 @@ $(function () {
 		}).render('#paypal-button-container'); // Renders the PayPal button
 	   </script> -->
 	<!-- paypal dev docs: https://developer.paypal.com/docs/subscriptions/integrate/ */
+
