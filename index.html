@@ -78,6 +78,29 @@
 		})(window, document, "clarity", "script", "is15henpdz");
 	</script>
 	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<style>
+		 #crypto {
+            background-color: #333; /* Dark container background color */
+            border: 1px solid #dbc858; /* Dark border */
+            padding: 20px;
+            border-radius: 10px;
+			max-width: 35%;
+        }
+		.crypto-container {
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			justify-content: center;
+		}
+
+		/* for mobile */
+		@media (max-width: 768px) {
+			#crypto {
+				max-width: 96%;
+				padding-top: 10px;
+			}
+		}
+	</style>
 </head>
 
 <body class="dark-theme  landing-page-demo">
@@ -209,6 +232,28 @@
 			</div>
 		</div>
 	</section>
+	<div id="crypto" class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="crypto-container text-center">
+                    <h5 class="crypto-title">Bitcoin (BTC)</h5>
+                    <p class="crypto-price" id="btcPrice">$0.00</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="crypto-container text-center">
+                    <h5 class="crypto-title">Ethereum (ETH)</h5>
+                    <p class="crypto-price" id="ethPrice">$0.00</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="crypto-container text-center">
+                    <h5 class="crypto-title">Solana (SOL)</h5>
+                    <p class="crypto-price" id="solPrice">$0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!--End of .hero-text-area-->
 	<!-- End  Page hero-->
 
@@ -982,6 +1027,34 @@
 	<script src="app.js"></script>
 	<!--for chatbot -->
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script>
+                const binanceWS = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade/ethusdt@trade/solusdt@trade');
+
+binanceWS.onmessage = function (event) {
+	const data = JSON.parse(event.data);
+
+	if (data.s === "BTCUSDT") {
+		updatePrice('btcPrice', parseFloat(data.p));
+	} else if (data.s === "ETHUSDT") {
+		updatePrice('ethPrice', parseFloat(data.p));
+	} else if (data.s === "SOLUSDT") {
+		updatePrice('solPrice', parseFloat(data.p));
+	}
+};
+
+function updatePrice(id, newPrice) {
+	const element = document.getElementById(id);
+	if (!element) return;
+
+	const currentPrice = parseFloat(element.textContent.replace('$', ''));
+	if (currentPrice < newPrice) {
+		element.style.color = '#62c965';
+	} else if (currentPrice > newPrice) {
+		element.style.color = 'red';
+	}
+	element.textContent = '$' + newPrice.toFixed(2);
+}
+    </script>
 </body>
 
 </html>
