@@ -227,7 +227,7 @@ $padding-for-hero-section: $link-height;
       justify-content: unset;
       overflow: auto;
       overflow-x: hidden;
-      background-color: $clr-main;
+      background-color: $clr-black;
     }
     @include screen-sm {
       width: 75%;

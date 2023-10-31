@@ -1819,7 +1819,7 @@ body.rounded-btns .read-more {
     justify-content: unset;
     overflow: auto;
     overflow-x: hidden;
-    background-color: var(--clr-main);
+    background-color: var(--clr-extra-dark-grey);
   }
 }
 @media (max-width: 767px) {
@@ -1947,7 +1947,7 @@ body.rounded-btns .read-more {
     display: none;
   }
   .header-basic .menu-link.active, .header-basic .menu-link:hover {
-    color: var(--clr-white);
+    color: var(--clr-main);
   }
   .header-basic .menu-link.active::before, .header-basic .menu-link:hover::before {
     background-color: var(--clr-white);
