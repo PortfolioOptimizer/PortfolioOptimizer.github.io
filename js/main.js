@@ -1,5 +1,5 @@
 /*===================================================
-Project: AI2BC AIPROF
+Project: AI2BC Portfolio Optimizer
 ====================================================*/
 
 //GLOBAL VARIBALES
@@ -728,8 +728,8 @@ $(function () {
 
   function shareOnFacebook() {
     // Set website url to be shared and Message
-    var urlToShare = 'https://meetyourai.github.io/AIProf/';
-    var shareMessage = 'Check out this amazing website! Learning made easy with Artificial Intelligence';
+    var urlToShare = 'https://portfoliooptimizer.github.io/';
+    var shareMessage = 'Optimize your crypto portfolio with AI precision and expert insights. Maximize returns, manage risks, and stay ahead of market trends with our tailored strategies.';
 
     // Construct the Facebook share URL
     var facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(urlToShare) + '&quote=' + encodeURIComponent(shareMessage);
@@ -747,8 +747,8 @@ $(function () {
 
   function shareOnTwitter() {
     // Set website url to be shared and Message
-    var urlToShare = 'https://meetyourai.github.io/AIProf/';
-    var tweetMessage = 'Check out this awesome website! Learning made easy with Artificial Intelligence';
+    var urlToShare = 'https://portfolio optimizer.github.io/';
+    var tweetMessage = 'Optimize your crypto portfolio with AI precision and expert insights. Maximize returns, manage risks, and stay ahead of market trends with our tailored strategies.';
 
     // Construct the Twitter share URL
     var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(urlToShare) + '&text=' + encodeURIComponent(tweetMessage);
@@ -766,8 +766,8 @@ $(function () {
 
   function shareOnWhatsApp() {
     // Set website url to be shared and Message
-    var urlToShare = 'https://meetyourai.github.io/AIProf/';
-    var message = 'Learning made easy with AI: Check out this website: ' + urlToShare;
+    var urlToShare = 'https://portfolioptimizer.github.io/';
+    var message = 'Optimize your crypto portfolio with AI precision and expert insights. Maximize returns, manage risks, and stay ahead of market trends with our tailored strategies.' + urlToShare;
 
     // Create a WhatsApp share link
     var whatsappShareUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(message);
